@@ -16,6 +16,7 @@ namespace Server.Network
 
         public Account _Account;
         public AccountIdentity _Identity;
+        public AccountManifest _Manifest;
         //public account_info _Info;
 
         public NetClient(TcpClient tcpClient)

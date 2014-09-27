@@ -14,6 +14,7 @@ namespace Server.Database.Model
         public EStatus Status { get; set; }
         public string AccountType { get; set; }
         public int Provider { get; set; }
+        public short Unk { get; set; }
     }
 
     public class AccountIdentity
@@ -30,6 +31,20 @@ namespace Server.Database.Model
         public byte CanCraft { get; set; }
         public byte CanPlayRanked { get; set; }
         public string IdentId { get; set; }
+    }
+
+    public class AccountManifest
+    {
+        public byte[] Hash { get; set; }
+        public short Unk { get; set; }
+        public string Region { get; set; }
+        public string Os { get; set; }
+        public string Architecture { get; set; }
+        public byte Major { get; set; }
+        public byte Minor { get; set; }
+        public byte Micro { get; set; }
+        public byte Hotfix { get; set; }
+        public string VideoDriver { get; set; }
     }
 
     public enum EStatus

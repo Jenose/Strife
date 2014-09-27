@@ -11,9 +11,9 @@ namespace Server.Network.Send
     /// 001c
     /// b5f3a0d25657f13f7bc2671dd162d07429ad253a75dff6d7f7bfbbb64cdb9731
     /// </summary>
-    public class UNK1C00 : NetSendPacket
+    public class SP_1C00_AuthResponse : NetSendPacket
     {
-        public UNK1C00()
+        public SP_1C00_AuthResponse()
         {
 
         }

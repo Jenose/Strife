@@ -4,7 +4,7 @@ using Server.Utilities;
 
 namespace Server.Network.Recv
 {
-    public class UNK0C00 : NetRecvPacket
+    public class RP_0C00_AuthRequest : NetRecvPacket
     {
         protected short UNK;
         protected int AccountID;
@@ -24,11 +24,12 @@ namespace Server.Network.Recv
             if (account != null)
             {
                 this._Client._Account = account;
+                this._Client._Account.Unk = UNK;
                 this._Client._Identity = DBAccount.GetInstance().GetAccountIdentity(AccountID);
                 NetFactory.ConnectedClients.Add(this._Client);
 
                 // response
-                this._Client.SendPacket(new UNK1C00());
+                this._Client.SendPacket(new SP_1C00_AuthResponse());
             }
             //this._Client.Disconnect();
         }

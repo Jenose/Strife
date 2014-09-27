@@ -14,13 +14,15 @@ namespace Server.Network
         {
             #region Recv
 
-            Recv.Add(unchecked((short)0x0C00), typeof(UNK0C00));
+            Recv.Add(unchecked((short)0x0C00), typeof(RP_0C00_AuthRequest));
+            Recv.Add(unchecked((short)0x0C01), typeof(RP_0C01_ClientManifestInfo));
 
             #endregion
 
             #region Send
 
-            Send.Add(typeof(UNK1C00), unchecked((short)0x1C00));
+            Send.Add(typeof(SP_1C00_AuthResponse), unchecked((short)0x1C00));
+            Send.Add(typeof(SP_1C01_Unknown), unchecked((short)0x1C01));
 
             #endregion
         }

@@ -61,9 +61,10 @@
     <Compile Include="Network\NetOpcode.cs" />
     <Compile Include="Network\NetRecvPacket.cs" />
     <Compile Include="Network\NetSendPacket.cs" />
-    <Compile Include="Network\Recv\UNK0C00.cs" />
-    <Compile Include="Network\Recv\UNK0C01.cs" />
-    <Compile Include="Network\Send\UNK1C00.cs" />
+    <Compile Include="Network\Recv\RP_0C00_AuthRequest.cs" />
+    <Compile Include="Network\Recv\RP_0C01_ClientManifestInfo.cs" />
+    <Compile Include="Network\Send\SP_1C00_AuthResponse.cs" />
+    <Compile Include="Network\Send\SP_1C01_Unknown.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Funcs.cs" />
