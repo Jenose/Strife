@@ -18,3 +18,8 @@ and simple mysql connection script and logging by NLog
 ======
 
 You're welcome to folk and help me implement project.
+
+Master Server:  TCP 80 (443 for requests using https)
+Chat Servers: TCP 7031-7040
+Game Servers: UDP 11235-11335
+Voice Servers: TCP and UDP 7335-7355    
